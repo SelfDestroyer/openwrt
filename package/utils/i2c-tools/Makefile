@@ -13,7 +13,8 @@ PKG_VERSION:=3.1.0
 PKG_RELEASE:=1
 
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.bz2
-PKG_SOURCE_URL:=http://dl.lm-sensors.org/i2c-tools/releases
+PKG_SOURCE_URL:=https://web.archive.org/web/20150326044243/http://dl.lm-sensors.org/i2c-tools/releases/
+#PKG_SOURCE_URL:=http://dl.lm-sensors.org/i2c-tools/releases
 PKG_MD5SUM:=f15019e559e378c6e9d5d6299a00df21
 
 PKG_BUILD_DEPENDS:=PACKAGE_python-smbus:python
