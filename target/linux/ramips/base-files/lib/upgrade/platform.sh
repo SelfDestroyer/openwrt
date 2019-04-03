@@ -134,6 +134,7 @@ platform_check_image() {
 	rp-n53|\
 	rt5350f-olinuxino|\
 	rt5350f-olinuxino-evb|\
+	rt5350f-olinuxino-evb-plus|\
 	rt-ac51u|\
 	rt-g32-b1|\
 	rt-n10-plus|\

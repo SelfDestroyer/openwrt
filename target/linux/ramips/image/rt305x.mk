@@ -122,7 +122,7 @@ define Device/asl26555-8M
   DTS := ASL26555-8M
   IMAGE_SIZE := 7744k
   SUPPORTED_DEVICES += asl26555
-  DEVICE_TITLE := Alpha ASL26555 
+  DEVICE_TITLE := Alpha ASL26555
   DEVICE_PACKAGES := kmod-usb-core kmod-usb-dwc2 kmod-usb-ledtrig-usbport
 endef
 TARGET_DEVICES += asl26555-8M
@@ -261,7 +261,7 @@ define Device/dir-610-a1
 	seama -m "dev=/dev/mtdblock/2" -m "type=firmware" | \
 	seama-seal -m "signature=wrgn59_dlob.hans_dir610" | \
 	check-size $$$$(IMAGE_SIZE)
-  DEVICE_TITLE := D-Link DIR-610 A1 
+  DEVICE_TITLE := D-Link DIR-610 A1
   DEVICE_PACKAGES := kmod-ledtrig-netdev kmod-ledtrig-timer
 endef
 TARGET_DEVICES += dir-610-a1
@@ -632,6 +632,15 @@ define Device/rt5350f-olinuxino-evb
 		kmod-spi-dev
 endef
 TARGET_DEVICES += rt5350f-olinuxino-evb
+
+define Device/rt5350f-olinuxino-evb-plus
+  DTS := RT5350F-OLINUXINO-EVB-PLUS
+  DEVICE_TITLE := RT5350F-OLinuXino-EVB+
+  DEVICE_PACKAGES := kmod-usb-core kmod-usb-ohci kmod-usb2 \
+		kmod-i2c-core kmod-i2c-ralink \
+		kmod-spi-dev kmod-mmc-spi
+endef
+TARGET_DEVICES += rt5350f-olinuxino-evb-plus
 
 define Device/rt-g32-b1
   DTS := RT-G32-B1

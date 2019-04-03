@@ -439,6 +439,9 @@ ramips_board_detect() {
 	*"RT5350F-OLinuXino-EVB")
 		name="rt5350f-olinuxino-evb"
 		;;
+	*"RT5350F-OLinuXino-EVB+")
+		name="rt5350f-olinuxino-evb-plus"
+		;;
 	*"RT-AC51U")
 		name="rt-ac51u"
 		;;
