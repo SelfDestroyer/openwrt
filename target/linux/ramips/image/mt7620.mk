@@ -561,6 +561,16 @@ define Device/microduino_microwrt
 endef
 TARGET_DEVICES += microduino_microwrt
 
+define Device/olimex_mt7620-olinuxino
+	MTK_SOC := mt7620a
+	IMAGE_SIZE := $(ralink_default_fw_size_16M)
+	DEVICE_VENDOR := OLIMEX
+	DEVICE_MODEL := MT7620-OLinuXino
+	DEVICE_PACKAGES := kmod-usb2 kmod-usb-ohci kmod-sdhci-mt7620
+	SUPPORTED_DEVICES += mt7620-olinuxino
+endef
+TARGET_DEVICES += olimex_mt7620-olinuxino
+
 define Device/netgear_ex2700
   MTK_SOC := mt7620a
   NETGEAR_HW_ID := 29764623+4+0+32+2x2+0
